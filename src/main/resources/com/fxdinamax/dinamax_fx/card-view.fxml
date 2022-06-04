@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="126.0" prefWidth="195.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxdinamax.dinamax_fx.CardView">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="30.0" fill="WHITE" height="140.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="211.0" />
+      <Label id="title" layoutX="14.0" layoutY="14.0" text="Gastos" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label id="sub_title" layoutX="14.0" layoutY="55.0" text="Total de registros" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="104.66666666666667" AnchorPane.topAnchor="55.0" />
+      <Label layoutX="16.0" layoutY="78.0" text="\$" AnchorPane.bottomAnchor="20.666666666666664" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="175.33333333333334" AnchorPane.topAnchor="78.0">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="75.0" text="238000" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
