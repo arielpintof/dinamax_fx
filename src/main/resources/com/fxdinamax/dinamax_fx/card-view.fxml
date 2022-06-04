@@ -2,15 +2,16 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="223.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="CardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox id="CardView" layoutX="8.0" styleClass="colores_card" stylesheets="@stylesheet.css">
+      <VBox id="CardView" layoutX="-2.0" prefHeight="155.0" prefWidth="227.0" styleClass="colores_card" stylesheets="@stylesheet.css">
          <children>
-            <Label id="card_title" fx:id="title_1" text="Gastos ">
+            <Label id="card_title" fx:id="title_11" text="Gastos ">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -18,16 +19,34 @@
                   <Insets left="20.0" top="10.0" />
                </VBox.margin>
             </Label>
-            <Label id="subtitle" fx:id="subtitle_1" text="Total de gastos">
+            <Label id="subtitle" fx:id="subtitle_11" text="Total de gastos">
                <VBox.margin>
                   <Insets left="20.0" top="3.0" />
                </VBox.margin>
             </Label>
-            <Label id="gasto_cifra_title" fx:id="cifra_1" text="\$1282001">
-               <font>
-                  <Font name="System Bold" size="40.0" />
-               </font>
-            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label id="card_title" text="\$">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label id="gasto_cifra_title" fx:id="cifra_11" text="1282001">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
          </children>
       </VBox>
    </children>
